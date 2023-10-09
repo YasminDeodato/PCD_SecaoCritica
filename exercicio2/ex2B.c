@@ -1,9 +1,9 @@
 /*
-* Programacao Concorrente e Distribuida
-* Rainbow Game of Life com Openmp
-* Helio Didzec Junior
-* Yasmin Beatriz Deodato
-*/
+ * Programacao Concorrente e Distribuida
+ * Secao Critica - Exercicio 2B
+ * Helio Didzec Junior
+ * Yasmin Beatriz Deodato
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>

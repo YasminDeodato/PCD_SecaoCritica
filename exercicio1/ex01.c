@@ -1,3 +1,9 @@
+/*
+ * Programacao Concorrente e Distribuida
+ * Secao Critica - Exercicio 1
+ * Helio Didzec Junior
+ * Yasmin Beatriz Deodato
+ */
 #include <stdlib.h>
 #include <stdio.h>
 #include <pthread.h>
