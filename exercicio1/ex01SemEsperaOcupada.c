@@ -18,7 +18,7 @@ void *incrementa(void *t){
         int local = SOMA;
         sleep(rand()%2);
         SOMA = local + 1;
-        printf("Thread %d - Soma %d\n", (long)t, SOMA);
+        printf("Thread %ld - Soma %d\n", (long)t, SOMA);
     }
 }
 

@@ -13,11 +13,11 @@
 
 int SOMA = 0, request = 0, respond = 0;
 
-void incrementa(){
+void incrementa(long idthread){
   int local = SOMA;
   sleep(rand()%2);
   SOMA = local + 1;
-  printf("%d\n", SOMA);
+  printf("Thread %ld - Soma %d\n", idthread, SOMA);
 }
 
 
@@ -28,7 +28,7 @@ void *lockCliente(void *t){
         while (respond != tLocal){
             request = tLocal;
         }
-        incrementa();
+        incrementa(tLocal);
         respond = 0;
     }
 }
