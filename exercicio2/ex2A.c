@@ -167,8 +167,10 @@ int interacoes(float **matriz) {
             for(j = 0; j <= N-1; j++){
                 copia[i][j] = verificarNovoEstadoCelula(matriz, i, j);
                 
-                #pragma omp critical
-                    if (copia[i][j] > 0.0) vivosThread++;
+                if (copia[i][j] > 0.0) {
+                    #pragma omp critical
+                    vivosThread++;
+                }
             }
         }
 
